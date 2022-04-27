@@ -1,22 +1,50 @@
 /* Controla as rotas em que cada compenente será renderizado */
-import React from "react";
-import { Container } from "./style";
+import React, { useState } from "react";
+import { Container, Logo, Menu, MenuMobile, ContentMenuMobile } from "./style";
 import { Button } from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header: React.FC = () => {
+  const [showMenu, setShowMenu] = useState<boolean>(false) //estudar isso pelo amor de deus
+  const handleOpenNavMenu = () => {
+    setShowMenu(!showMenu)
+  }
   return (
-    <Container>
-      <section className="header">
-        <div className="puta">
-           <h1>G</h1>
-        </div>
-          <div className="div">
-            <Button variant="contained">Home</Button>
-            <Button variant="contained">Maggie</Button>
-            <Button variant="contained">Bart</Button>
-            <Button variant="contained">SpiderPig</Button>
-          </div>
-      </section>
+    <Container>    
+      <Logo>
+        G
+      </Logo>
+      <Menu>
+        <ul>
+          <li><Button variant="contained">Home</Button></li>
+          <li><Button variant="contained">Maggie</Button></li>
+          <li><Button variant="contained">Bart</Button></li>
+          <li><Button variant="contained">SpiderPig</Button></li>
+        </ul>
+      </Menu>
+      <MenuMobile>
+        <IconButton
+          size="large"
+          aria-label="account of current user"
+          aria-controls="menu-appbar"
+          aria-haspopup="true"
+          onClick={handleOpenNavMenu}
+          color="inherit"
+        >
+          <MenuIcon />
+        </IconButton>
+        {showMenu && (
+          <ContentMenuMobile>
+            <ul>
+              <li><Button variant="contained">Home</Button></li>
+              <li><Button variant="contained">Maggie</Button></li>
+              <li><Button variant="contained">Bart</Button></li>
+              <li><Button variant="contained">SpiderPig</Button></li>
+            </ul>
+          </ContentMenuMobile>
+        )}    
+      </MenuMobile>
     </Container>
   );
 };

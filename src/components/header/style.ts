@@ -1,19 +1,15 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-
-.header{
   list-style: none;
-  width: 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1400px;
-  padding-left: 30px;
-  width: 100%;
-  background-color: #382f2f9c ;
-}
-.puta h1{
-  background-color: white;
+  padding:10px 30px;
+  background-color: #382f2f9c;
+`
+export const Logo = styled.h1`
+  background-color: #fff;
   color: black;
   height: 50px;
   width:  50px;
@@ -25,13 +21,32 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-
-}
-.puta h1:hover{
-  transform: scale(1.25);
-}
-.div{
+`
+export const Menu = styled.div`
+  float: right;
   display: flex;
-  gap: 15px;
-}
+  @media(max-width: 968px){
+    display: none; 
+  }
+  ul{
+    display: flex;
+    list-style: none;
+  }
+  li{
+    margin: 0px 5px;
+  }
+
+`
+export const MenuMobile = styled.div`
+  display: none;
+  @media(max-width: 968px){
+    display: block; 
+  }
+`
+export const ContentMenuMobile = styled.div`
+  ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
 `
