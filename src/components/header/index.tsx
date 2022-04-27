@@ -6,11 +6,17 @@ import { Button } from "@mui/material";
 const Header: React.FC = () => {
   return (
     <Container>
-      <ul>
-        <li>Home</li>
-        <li>Teste</li>
-      </ul>
-      <Button variant="contained">Contained</Button>
+      <section className="header">
+        <div className="puta">
+           <h1>G</h1>
+        </div>
+          <div className="div">
+            <Button variant="contained">Home</Button>
+            <Button variant="contained">Maggie</Button>
+            <Button variant="contained">Bart</Button>
+            <Button variant="contained">SpiderPig</Button>
+          </div>
+      </section>
     </Container>
   );
 };
