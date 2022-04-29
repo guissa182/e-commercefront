@@ -44,9 +44,23 @@ export const MenuMobile = styled.div`
   }
 `
 export const ContentMenuMobile = styled.div`
-  ul{
-      display: flex;
-      flex-direction: column;
-      list-style: none;
+  background-color: #fff;
+  position: absolute;
+  right: 30px;
+  box-shadow: 0 0 0.5em #000000;
+  z-index: +10;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    overflow: show;
+    color: #000000;
+    padding: 0 50px 0 10px;
+    font-size: 17px;
+    & li:hover{
+      border-bottom: 2px solid #000;
+      cursor: pointer;
     }
+  }
 `

@@ -1,4 +1,4 @@
-/* Controla as rotas em que cada compenente será renderizado */
+/* Controla as rotas em que cada compenente serÃ¡ renderizado */
 import React, { useState } from "react";
 import { Container, Logo, Menu, MenuMobile, ContentMenuMobile } from "./style";
 import { Button } from "@mui/material";
@@ -37,10 +37,10 @@ const Header: React.FC = () => {
         {showMenu && (
           <ContentMenuMobile>
             <ul>
-              <li><Button variant="contained">Home</Button></li>
-              <li><Button variant="contained">Maggie</Button></li>
-              <li><Button variant="contained">Bart</Button></li>
-              <li><Button variant="contained">SpiderPig</Button></li>
+              <li>Home</li>
+              <li>margie</li>
+              <li>lizza</li>
+              <li>bart</li>
             </ul>
           </ContentMenuMobile>
         )}    
