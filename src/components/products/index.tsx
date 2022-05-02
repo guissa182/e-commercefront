@@ -6,7 +6,8 @@ import joia3 from "../../assets/img3.jpg"
 import joia4 from "../../assets/img4.jpg"
 import joia5 from "../../assets/img5.jpg"
 import joia6 from "../../assets/img6.jpg"
-import { Container, Title, SubTitle, ContainerSlide } from "./style";
+import Button from '@mui/material/Button';
+import { Container, Title, SubTitle, ContainerSlide, ContainerInfo } from "./style";
 import "react-multi-carousel/lib/styles.css";
 
 const Products: React.FC = () => {
@@ -49,22 +50,64 @@ const Products: React.FC = () => {
         itemClass="carousel-item-padding-40-px"
       >
         <ContainerSlide>
-          <img src={joia1} alt="" />  
+          <img src={joia1} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
         <ContainerSlide>
-          <img src={joia2} alt="" />  
+          <img src={joia2} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
         <ContainerSlide>
-          <img src={joia3} alt="" />  
+          <img src={joia3} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
         <ContainerSlide>
-          <img src={joia4} alt="" />  
+          <img src={joia4} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
         <ContainerSlide>
-          <img src={joia5} alt="" />  
+          <img src={joia5} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
         <ContainerSlide>
-          <img src={joia6} alt="" />  
+          <img src={joia6} alt="" />
+          <ContainerInfo>
+            <Title variant="h4">Produtos</Title>
+            <SubTitle variant="h6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</SubTitle>
+            <Button variant="contained" href="/login" size="large">
+              Comprar
+            </Button>
+          </ContainerInfo>
         </ContainerSlide>
       </Carousel>
     </Container>
